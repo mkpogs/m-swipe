@@ -1,0 +1,11 @@
+@use './variables' as var;
+
+// ===== Headings =====
+@mixin headings($size, $weight, $letterSpacing){
+    font-family: var.$font-heading;
+    width: 100%;
+
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letterSpacing;
+}
