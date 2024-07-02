@@ -9,3 +9,12 @@
     font-weight: $weight;
     letter-spacing: $letterSpacing;
 }
+
+// ===== Subtitle =====
+@mixin subTitle($color){
+    color: $color;
+    font-family: var.$font-heading;
+    font-weight: 500;
+    font-size: var.$font-subtitle-size;
+    line-height: var.$font-subtitle-height;
+}

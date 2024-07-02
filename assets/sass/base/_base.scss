@@ -46,5 +46,26 @@ a{
     &:active{
         color: abs.$color-primary-accent;
     }
+}
 
+p{
+    font-size: abs.$font-para-size;
+    line-height: abs.$font-para-height;
+    font-weight: 400;
+    margin: abs.$spacing-md 0;
+}
+
+.subtitle-purple{
+    @include abs.subTitle(abs.$color-purple-1);
+}
+
+.subtitle-blue{
+    @include abs.subTitle(abs.$color-blue-1);
+}
+
+.secondary-text{
+    color: abs.$color-grey;
+    font-size: abs.$font-text-secondary-size;
+    line-height: abs.$font-text-secondary-height;
+    letter-spacing: 0.25px;
 }

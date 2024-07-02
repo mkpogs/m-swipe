@@ -66,6 +66,36 @@ a:hover, a:active {
   color: #0a2540;
 }
 
+p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  margin: 1.6rem 0;
+}
+
+.subtitle-purple {
+  color: #6962f1;
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+}
+
+.subtitle-blue {
+  color: #00d4ff;
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+}
+
+.secondary-text {
+  color: #adbdcc;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+}
+
 *,
 *::before,
 *::after {
