@@ -1,0 +1,22 @@
+@use '../abstract/' as abs;
+
+.two-column{
+    @include abs.flexTwoColumn($items: flex-start);
+
+
+    .col-left{
+        @include abs.flexHalfWidth;
+        padding-right: abs.$spacing-md;
+        background-color: cadetblue;
+    }
+
+    .col-right{
+        @include abs.flexHalfWidth;
+        padding-left: abs.$spacing-md;
+        background-color: coral;
+    }
+}
+        
+    
+
+    

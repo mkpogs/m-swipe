@@ -1,10 +1,16 @@
 @use './variables' as var;
 
-// ===== Layout =====
-@mixin flexCenter{
+// ===== Extends =====
+%flexCenter{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+// ===== Layout =====
+@mixin flexCenter{
+    @extend %flexCenter;
 }
 
 @mixin flexColPos($content: center, $items: center){
@@ -20,12 +26,34 @@
     justify-content: $content;
     align-items: $items;
 }
+
+@mixin containerWidth{
+    width: var.$width-full;
+    max-width: var.$width-standard;
+}
+
+@mixin flexTwoColumn($content: center, $items: center){
+    width: var.$width-full;
+    display: flex;
+    flex-direction: row;
+    justify-content: $content;
+    align-items: $items;
+    gap: 0 2rem;
+}
+
+@mixin flexHalfWidth{
+    width: var.$width-half;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
   
 
 // ===== Headings =====
 @mixin headings($size, $weight, $letterSpacing){
     font-family: var.$font-heading;
-    width: 100%;
+    width: var.$width-full;
 
     font-size: $size;
     font-weight: $weight;
