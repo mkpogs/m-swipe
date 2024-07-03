@@ -1,0 +1,28 @@
+@use '../abstract/' as abs;
+
+.navbar{
+    @include abs.flexRowPos(space-between);
+    width: abs.$width-full;
+    max-width: abs.$width-standard;
+    padding: 0 abs.$spacing-md;
+
+    .menu{
+        @include abs.flexCenter;
+        gap: 0 abs.$spacing-md;
+
+        &__item{
+
+        }
+
+        &__item-link:link,
+        &__item-link:visited{
+            color: abs.$color-text-light;
+            font-weight: bold;
+        }
+
+        &__item-link:hover,
+        &__item-link:active{
+            text-decoration: underline;
+        }
+    }
+}

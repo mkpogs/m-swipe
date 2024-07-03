@@ -7,6 +7,21 @@
     align-items: center;
 }
 
+@mixin flexColPos($content: center, $items: center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $content;
+    align-items: $content;
+}
+
+@mixin flexRowPos($content: center, $items: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $content;
+    align-items: $items;
+}
+  
+
 // ===== Headings =====
 @mixin headings($size, $weight, $letterSpacing){
     font-family: var.$font-heading;

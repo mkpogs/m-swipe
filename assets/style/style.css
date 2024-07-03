@@ -4,6 +4,7 @@ body {
   width: 100%;
   box-sizing: inherit;
   padding: 0.8rem 0 0 0;
+  background-color: #6962f1;
 }
 
 h1 {
@@ -64,6 +65,10 @@ a:link, a:visited {
 }
 a:hover, a:active {
   color: #0a2540;
+}
+
+ul {
+  list-style-type: none;
 }
 
 p {
@@ -140,6 +145,42 @@ body {
 }
 .btn-secondary:hover {
   opacity: 0.75;
+}
+.btn-navbar {
+  background: rgba(250, 250, 250, 0.25);
+}
+.btn-navbar:hover {
+  background: rgba(250, 250, 250, 0.5);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 114.4rem;
+  padding: 0 1.6rem;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1.6rem;
+}
+.navbar .menu__item-link:link, .navbar .menu__item-link:visited {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar .menu__item-link:hover, .navbar .menu__item-link:active {
+  text-decoration: underline;
 }
 
 .btn-with-icon {

@@ -34,4 +34,12 @@
             opacity: 0.75;
         }
     }
+
+    &-navbar{
+        background: rgba(250, 250, 250, 0.25);
+
+        &:hover{
+            background: rgba(250, 250, 250, 0.5);
+        }
+    }
 }
