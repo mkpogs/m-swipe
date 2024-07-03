@@ -142,4 +142,16 @@ body {
   opacity: 0.75;
 }
 
+.btn-with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-with-icon > img {
+  transition: transform 0.3s ease;
+}
+.btn-with-icon:hover > img {
+  transform: translateX(5px);
+}
+
 /*# sourceMappingURL=style.css.map */

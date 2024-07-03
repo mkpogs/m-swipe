@@ -1,0 +1,13 @@
+@use '../abstract/' as abs;
+
+.btn-with-icon{
+    @include abs.flexCenter;
+    
+    & > img{
+        transition: transform .3s ease;
+    }
+
+    &:hover > img{
+        transform: translateX(5px);
+    }
+}

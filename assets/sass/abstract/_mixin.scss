@@ -1,5 +1,12 @@
 @use './variables' as var;
 
+// ===== Layout =====
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // ===== Headings =====
 @mixin headings($size, $weight, $letterSpacing){
     font-family: var.$font-heading;
