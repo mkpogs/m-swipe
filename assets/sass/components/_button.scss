@@ -1,0 +1,37 @@
+@use '../abstract/' as abs;
+
+
+.btn{
+    cursor: pointer;
+    font-family: abs.$font-body;
+    font-size: abs.$btn-font-size;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border: none;
+
+    
+
+    &-primary{
+        border-radius: 20px;
+        padding: abs.$spacing-sm abs.$spacing-md;
+        background-color: abs.$color-primary-accent;
+        color: abs.$color-text-light;
+
+        transition: background-color .3s ease;
+
+        &:hover{
+            background-color: abs.$color-btn-primary-hover;
+        }
+    }
+
+    &-secondary{
+        background-color: transparent;
+        color: abs.$color-primary-accent;
+
+        transition: opacity .3s ease;
+
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}
