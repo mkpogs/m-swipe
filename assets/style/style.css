@@ -207,6 +207,18 @@ body {
   transform: translate(32px, -32px);
 }
 
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3.2rem 1.6rem;
+  margin: 6.4rem 0;
+}
+.partners-grid img {
+  height: 6rem;
+  place-self: center;
+}
+
 .btn-with-icon > img {
   transition: transform 0.3s ease;
 }
