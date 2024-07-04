@@ -9,6 +9,10 @@ body{
     background-color: abs.$color-purple-1
 }
 
+main{
+    margin: abs.$spacing-xl 0;
+}
+
 h1{
     @include abs.headings(abs.$h1-size, 600, -1px);
     line-height: abs.$h1-height;

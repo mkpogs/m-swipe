@@ -1,0 +1,19 @@
+@use '../abstract/' as abs;
+
+.hero{
+
+    p{
+        max-width: 50rem;
+        margin-bottom: abs.$spacing-md;
+    }
+
+    &-phone-container{
+        height: 56.4rem;
+        align-items: flex-end !important;
+    }
+
+    &-phone-img{
+        height: 62.8rem;
+        transform: translate(32px, -32px);
+    }
+}

@@ -10,9 +10,11 @@
 // ===== Layouts =====
 @use './layouts/body';
 @use './layouts/navbar';
+@use './layouts/hero';
 @use './layouts/header';
 @use './layouts/footer';
 @use './layouts/btn-with-icon';
+@use './layouts/section-container';
 @use './layouts/two-column';
 
 
