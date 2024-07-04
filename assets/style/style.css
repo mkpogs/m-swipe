@@ -10,7 +10,7 @@ body {
   width: 100%;
   box-sizing: inherit;
   padding: 0.8rem 0 0 0;
-  background-color: #6962f1;
+  background-color: #f7f9fc;
 }
 
 main {
@@ -217,6 +217,22 @@ body {
 .partners-grid img {
   height: 6rem;
   place-self: center;
+}
+
+.unified {
+  padding: 6.4rem 0;
+}
+.unified h3 {
+  width: 50%;
+  margin-bottom: 1.6rem;
+}
+.unified .btn-primary {
+  background-color: #6962f1;
+  margin: 1.6rem 0;
+  transition: background-color 0.3s ease;
+}
+.unified .btn-primary:hover {
+  background-color: #0a2540;
 }
 
 .btn-with-icon > img {

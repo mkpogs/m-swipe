@@ -1,0 +1,21 @@
+@use '../abstract/' as abs;
+
+.unified{
+    padding: abs.$spacing-xl 0;
+
+    h3{
+        width: 50%;
+        margin-bottom: abs.$spacing-md;
+    }
+
+    .btn-primary{
+        background-color: abs.$color-purple-1;
+        margin: abs.$spacing-md 0;
+
+        transition: background-color .3s ease;
+
+        &:hover{
+            background-color: abs.$color-primary-accent;
+        }
+    }
+}
