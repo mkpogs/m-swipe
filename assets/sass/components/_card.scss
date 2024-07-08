@@ -1,0 +1,19 @@
+@use '../abstract/' as abs;
+
+.card{
+    @include abs.flexColPos(flex-start, flex-start);
+    padding: abs.$spacing-sm abs.$spacing-md abs.$spacing-sm 0;
+
+    &__img{
+        width: 50px;
+        margin: 0 0 abs.$spacing-sm 0;
+    }
+
+    &__heading{
+        font-size: abs.$font-heading;
+        font-size: abs.$h6-size;
+        font-weight: 500;
+        width: abs.$width-full;
+        margin: 0;
+    }
+}
