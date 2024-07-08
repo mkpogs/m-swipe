@@ -285,6 +285,32 @@ body {
   box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
 }
 
+.integration {
+  background-color: #0a2540;
+  color: #fff;
+}
+.integration .card-container .card {
+  width: 50%;
+}
+.integration .btn-primary {
+  background-color: #00d4ff;
+  color: #0a2540;
+  margin: 1.6rem 0 0 0;
+}
+.integration .btn-primary:hover {
+  background-color: #fff;
+}
+.integration .btn-secondary {
+  color: #00d4ff;
+}
+.integration__img {
+  max-width: 470px;
+  border-radius: 20px;
+}
+.integration__img:not(:last-child) {
+  margin: 0 0 1.6rem;
+}
+
 .btn-with-icon > img {
   transition: transform 0.3s ease;
 }
@@ -295,6 +321,11 @@ body {
 .section-container {
   width: 100%;
   max-width: 114.4rem;
+}
+
+.card-container {
+  display: flex;
+  margin: 6.4rem 0;
 }
 
 .two-column {

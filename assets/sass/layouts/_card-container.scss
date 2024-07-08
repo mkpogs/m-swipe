@@ -1,0 +1,6 @@
+@use '../abstract/' as abs;
+
+.card-container{
+    display: flex;
+    margin: abs.$spacing-xl 0;
+}

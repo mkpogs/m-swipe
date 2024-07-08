@@ -1,0 +1,33 @@
+@use '../abstract/' as abs;
+
+.integration{
+    background-color: abs.$color-primary-accent;
+    color: abs.$color-text-light;
+
+    .card-container .card{
+        width: 50%;
+    }
+
+    .btn-primary{
+        background-color: abs.$color-blue-1;
+        color: abs.$color-primary-accent;
+        margin: abs.$spacing-md 0 0 0;
+
+        &:hover{
+            background-color: abs.$color-bg-white;
+        }
+    }
+
+    .btn-secondary{
+        color: abs.$color-blue-1;
+    }
+
+    &__img{
+        max-width: 470px;
+        border-radius: 20px;
+
+        &:not(:last-child){
+            margin: 0 0 abs.$spacing-md;
+        }
+    }
+}
