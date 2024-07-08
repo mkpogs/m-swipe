@@ -1,0 +1,34 @@
+@use '../abstract/' as abs;
+
+.grid-graphic{
+    display: grid;
+    grid-template-areas:    "card slack slack" 
+                            "phone slack slack"
+                            "phone dash dash";
+    gap: abs.$spacing-lg;
+    padding: abs.$spacing-lg 0;
+}
+
+#credit-card{
+    grid-area: card;
+    width: abs.$width-full;
+    box-shadow: abs.$box-shadow-standard;
+}
+
+#slack-invoice{
+    grid-area: slack;
+    width: abs.$width-full;
+    box-shadow: abs.$box-shadow-standard;
+}
+
+#phone{
+    grid-area: phone;
+    width: abs.$width-full;
+    box-shadow: abs.$box-shadow-standard;
+}
+
+#dash{
+    grid-area: dash;
+    width: abs.$width-full;
+    box-shadow: abs.$box-shadow-standard;
+}
