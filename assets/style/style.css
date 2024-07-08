@@ -311,6 +311,21 @@ body {
   margin: 0 0 1.6rem;
 }
 
+.why-swipe {
+  margin: 6.4rem 0 0;
+}
+.why-swipe .card-container {
+  margin: 3.2rem 0;
+}
+.why-swipe .card {
+  width: 25%;
+  padding: 0 0.8rem 0 0;
+  margin: 0 1.6rem 0 0;
+}
+.why-swipe .secondary-text {
+  color: #000;
+}
+
 .btn-with-icon > img {
   transition: transform 0.3s ease;
 }

@@ -1,0 +1,19 @@
+@use '../abstract/' as abs;
+
+.why-swipe{
+    margin: abs.$spacing-xl 0 0;
+
+    .card-container{
+        margin: abs.$spacing-lg 0;
+    }
+
+    .card{
+        width: 25%;
+        padding: 0 abs.$spacing-sm 0 0;
+        margin: 0 abs.$spacing-md 0 0;
+    }
+
+    .secondary-text{
+        color: abs.$color-text-dark;
+    }
+}
