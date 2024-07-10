@@ -1,0 +1,5 @@
+@use '../abstract/' as abs;
+
+.virtual-events{
+    @include abs.flexCenter;
+}
