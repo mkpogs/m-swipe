@@ -1,7 +1,8 @@
 @use '../abstract/' as abs;
 
 .hero{
-
+    @include abs.flexCenter;
+    
     p{
         max-width: 50rem;
         margin-bottom: abs.$spacing-md;

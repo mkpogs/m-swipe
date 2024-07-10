@@ -3,6 +3,8 @@
 .why-swipe{
     margin: abs.$spacing-xl 0 0;
 
+    @include abs.flexCenter;
+
     .card-container{
         margin: abs.$spacing-lg 0;
     }

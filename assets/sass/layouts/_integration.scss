@@ -4,6 +4,8 @@
     background-color: abs.$color-primary-accent;
     color: abs.$color-text-light;
 
+    @include abs.flexCenter;
+
     .card-container .card{
         width: 50%;
     }

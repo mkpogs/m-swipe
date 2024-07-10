@@ -1,6 +1,7 @@
 @use '../abstract/' as abs;
 
 .partners{
+    @include abs.flexCenter;
 
     &-grid{
         display: grid;
