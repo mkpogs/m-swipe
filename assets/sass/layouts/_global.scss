@@ -3,7 +3,9 @@
 .global{
     background-color: abs.$color-primary-accent;
     color: abs.$color-text-light;
+    padding: abs.$spacing-xl*3 0;
 
+    position: relative;
     @include abs.flexCenter;
 
     a:link,
@@ -14,6 +16,13 @@
     a:hover,
     a:active{
         color: abs.$color-text-light;
+    }
+
+    .globe-img{
+        width: 844px;
+        opacity: 25%;
+        position: absolute;
+        top: 10%;
     }
 
     .card-container{

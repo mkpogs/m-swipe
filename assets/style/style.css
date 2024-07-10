@@ -330,6 +330,8 @@ body {
 .global {
   background-color: #0a2540;
   color: #fff;
+  padding: 19.2rem 0;
+  position: relative;
 }
 .global a:link,
 .global a:visited {
@@ -338,6 +340,12 @@ body {
 .global a:hover,
 .global a:active {
   color: #fff;
+}
+.global .globe-img {
+  width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
 }
 .global .card-container {
   margin: 12.8rem 0;
