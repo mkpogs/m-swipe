@@ -1,13 +1,68 @@
 @use '../abstract/' as abs;
 
 .sessions-card{
-
+    width: 540px;
+    height: 446px;
+    box-shadow: abs.$box-shadow-standard;
+    border-radius: 20px;
+    overflow: hidden;
 
     .card-top{
+        width: 100%;
+        height: 50%;
+
+        @include abs.flexCenter;
+        position: relative;
+        z-index: 10;
         
+
+        &::before{
+            content: "";
+            background: abs.$color-primary-gradient;
+            width: 100%;
+            height: 150%;
+            position: absolute;
+            top: -40%;
+            transform: skewY(-5deg);
+            z-index: 1;
+        }
+
+        &__logo{
+            width: 338px;
+            z-index: 2;
+        }
+
+        .avatar{
+            position: absolute;
+            bottom: -70px;
+            left: abs.$spacing-xl;
+            z-index: 3;
+
+            &__img{
+                width: 80px;
+                position: relative;
+
+                &:nth-child(2){
+                    position: absolute;
+                left: 65px;
+                }
+            }
+        }
     }
     
     .card-bottom{
-        
+        width: 100%;
+        height: 50%;
+        padding: abs.$spacing-xl;
+
+        .card-content{
+            margin: abs.$spacing-lg 0 0;
+        }
+
+        .secondary-text{
+            color: abs.$color-text-dark;
+            font-weight: 700;
+            width: 50%;
+        }
     }
 }
