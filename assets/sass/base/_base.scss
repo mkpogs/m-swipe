@@ -11,7 +11,7 @@ body{
 
 main{
     width: abs.$width-full;
-    margin: abs.$spacing-xl 0;
+    margin: abs.$spacing-xl 0 0 0;
 }
 
 h1{
@@ -45,6 +45,7 @@ a{
     &:visited{
         text-decoration: none;
         color: abs.$color-purple-1;
+        font-size: 1.8rem;
         font-weight: 500;
         transition: color .3s ease-in;
     }

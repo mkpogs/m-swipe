@@ -1,5 +1,62 @@
 @use '../abstract/' as abs;
 
 .footer{
-    
+    @include abs.flexCenter;
+    background-color: abs.$color-bg-light;
+    padding: abs.$spacing-xl 0;
+
+    .section-container{
+        display: flex;
+    }
+
+    &-logo{
+        max-width: 108px;
+        margin: 0 0 abs.$spacing-md 0;
+    }
+
+    &-icon-list{
+        display: flex;
+        flex-direction: column;
+        gap: abs.$spacing-md 0;
+    }
+
+    &-icon-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0 abs.$spacing-sm;
+    }
+
+    &-icon__img{
+        width: 24px;
+    }
+
+    .col{
+        width: 25%;
+
+        h3{
+            font-size: abs.$h6-size;
+            font-weight: 700;
+            margin-bottom: abs.$spacing-lg;
+        }
+
+        ul{
+            color: abs.$color-text-dark;
+            display: flex;
+            flex-direction: column;
+            gap: abs.$spacing-md 0;
+        }
+
+        a:link,
+        a:visited{
+            color: abs.$color-text-dark;
+            font-weight: normal;
+
+            &:hover,
+            &:active{
+                color: abs.$color-purple-1;
+                text-decoration: underline;
+            }
+        }
+    }
 }

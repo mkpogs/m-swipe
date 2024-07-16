@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.btn-with-icon, .getting-started, .virtual-events, .global, .why-swipe, .integration, .graphic, .unified, .partners, .hero, .navbar .menu, .sessions-card .card-top, .btn-container {
+.btn-with-icon, .footer, .getting-started, .virtual-events, .global, .why-swipe, .integration, .graphic, .unified, .partners, .hero, .navbar .menu, .sessions-card .card-top, .btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ body {
 
 main {
   width: 100%;
-  margin: 6.4rem 0;
+  margin: 6.4rem 0 0 0;
 }
 
 h1 {
@@ -71,6 +71,7 @@ h6 {
 a:link, a:visited {
   text-decoration: none;
   color: #6962f1;
+  font-size: 1.8rem;
   font-weight: 500;
   transition: color 0.3s ease-in;
 }
@@ -459,6 +460,57 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.footer {
+  background-color: #f7f9fc;
+  padding: 6.4rem 0;
+}
+.footer .section-container {
+  display: flex;
+}
+.footer-logo {
+  max-width: 108px;
+  margin: 0 0 1.6rem 0;
+}
+.footer-icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem 0;
+}
+.footer-icon-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 0.8rem;
+}
+.footer-icon__img {
+  width: 24px;
+}
+.footer .col {
+  width: 25%;
+}
+.footer .col h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.footer .col ul {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem 0;
+}
+.footer .col a:link,
+.footer .col a:visited {
+  color: #000;
+  font-weight: normal;
+}
+.footer .col a:link:hover, .footer .col a:link:active,
+.footer .col a:visited:hover,
+.footer .col a:visited:active {
+  color: #6962f1;
+  text-decoration: underline;
 }
 
 .btn-with-icon > img {
