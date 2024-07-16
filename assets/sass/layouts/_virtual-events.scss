@@ -2,4 +2,14 @@
 
 .virtual-events{
     @include abs.flexCenter;
+    padding: abs.$spacing-xl*2 0;
+
+    .btn-primary{
+        background-color: abs.$color-purple-1;
+        margin: abs.$spacing-md 0 0 0;
+
+        &:hover{
+            background-color: abs.$color-primary-accent;
+        }
+    }
 }

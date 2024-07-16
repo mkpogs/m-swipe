@@ -361,6 +361,17 @@ body {
   line-height: 28px;
 }
 
+.virtual-events {
+  padding: 12.8rem 0;
+}
+.virtual-events .btn-primary {
+  background-color: #6962f1;
+  margin: 1.6rem 0 0 0;
+}
+.virtual-events .btn-primary:hover {
+  background-color: #0a2540;
+}
+
 .btn-with-icon > img {
   transition: transform 0.3s ease;
 }
