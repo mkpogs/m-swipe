@@ -1,8 +1,8 @@
 @use '../abstract/' as abs;
 
 .getting-started{
-    @include abs.flexCenter;
     padding: abs.$spacing-xl;
+    @include abs.flexCenter;
 
     .btn-primary{
         background-color: abs.$color-purple-1;
