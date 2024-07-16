@@ -1,0 +1,31 @@
+@use '../abstract/' as abs;
+
+.getting-started{
+    @include abs.flexCenter;
+    padding: abs.$spacing-xl;
+
+    .btn-primary{
+        background-color: abs.$color-purple-1;
+        margin: abs.$spacing-md 0;
+
+        &:hover{
+            background-color: abs.$color-primary-accent;
+        }
+    }
+
+    .btn-secondary{
+        color: abs.$color-purple-2;
+        margin: abs.$spacing-md 0;
+    }
+
+    .card-container{
+        margin: 0;
+        gap: 0 abs.$spacing-sm;
+    }
+
+    .card{
+        width: 50%;
+
+        @include abs.flexColPos(flex-start, flex-start);
+    }
+}
