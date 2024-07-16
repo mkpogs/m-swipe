@@ -10,7 +10,6 @@ body {
   width: 100%;
   box-sizing: inherit;
   padding: 0.8rem 0 0 0;
-  background-color: #f7f9fc;
 }
 
 main {
@@ -545,7 +544,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-right: 1.6rem;
-  background-color: cadetblue;
 }
 .two-column .col-right {
   width: 50%;
@@ -554,7 +552,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 1.6rem;
-  background-color: coral;
 }
 
 /*# sourceMappingURL=style.css.map */
