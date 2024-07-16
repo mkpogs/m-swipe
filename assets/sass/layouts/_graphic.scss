@@ -2,4 +2,5 @@
 
 .graphic{
     @include abs.flexCenter;
+    background-color: abs.$color-bg-light;
 }

@@ -296,6 +296,7 @@ body {
 
 .unified {
   padding: 6.4rem 0;
+  background-color: #f7f9fc;
 }
 .unified h3 {
   width: 50%;
@@ -308,6 +309,10 @@ body {
 }
 .unified .btn-primary:hover {
   background-color: #0a2540;
+}
+
+.graphic {
+  background-color: #f7f9fc;
 }
 
 .grid-graphic {
