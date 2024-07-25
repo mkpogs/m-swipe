@@ -5,6 +5,7 @@
     width: abs.$width-full;
     max-width: abs.$width-standard;
     padding: 0 abs.$spacing-md;
+    margin: 0 0 abs.$spacing-xl;
 
     .menu{
         @include abs.flexCenter;
