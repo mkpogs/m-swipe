@@ -312,7 +312,7 @@ body {
 }
 
 .graphic {
-  background-color: #f7f9fc;
+  padding: 12.8rem 0 0;
 }
 
 .grid-graphic {
@@ -347,8 +347,21 @@ body {
 }
 
 .integration {
-  background-color: #0a2540;
   color: #fff;
+  padding: 19.2rem 0;
+  position: relative;
+  z-index: 10;
+}
+.integration::before {
+  content: "";
+  background-color: #0a2540;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
 }
 .integration .card-container .card {
   width: 50%;
@@ -374,6 +387,7 @@ body {
 
 .why-swipe {
   margin: 6.4rem 0 0;
+  padding: 19.2rem 0;
 }
 .why-swipe .card-container {
   margin: 3.2rem 0;

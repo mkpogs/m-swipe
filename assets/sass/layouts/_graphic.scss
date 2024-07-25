@@ -1,6 +1,6 @@
 @use '../abstract/' as abs;
 
 .graphic{
+    padding: abs.$spacing-xl*2 0 0;
     @include abs.flexCenter;
-    background-color: abs.$color-bg-light;
 }

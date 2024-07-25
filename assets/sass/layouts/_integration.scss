@@ -1,10 +1,24 @@
 @use '../abstract/' as abs;
 
 .integration{
-    background-color: abs.$color-primary-accent;
     color: abs.$color-text-light;
-
+    padding: abs.$spacing-xl*3 0;
     @include abs.flexCenter;
+    position: relative;
+    z-index: 10;
+
+    &::before{
+        content: "";
+        background-color: abs.$color-primary-accent;
+        width: 100%;
+        height: 1100px;
+
+        position: absolute;
+        top: -32px;
+        left: 0;
+        z-index: -1;
+        transform: skewY(-10deg);
+    }
 
     .card-container .card{
         width: 50%;

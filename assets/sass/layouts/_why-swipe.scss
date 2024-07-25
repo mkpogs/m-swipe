@@ -2,6 +2,7 @@
 
 .why-swipe{
     margin: abs.$spacing-xl 0 0;
+    padding: abs.$spacing-xl*3 0;
 
     @include abs.flexCenter;
 
