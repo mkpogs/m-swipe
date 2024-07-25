@@ -327,6 +327,7 @@ body {
 }
 
 .graphic {
+  background-color: #f7f9fc;
   padding: 12.8rem 0 0;
 }
 
@@ -377,6 +378,16 @@ body {
   left: 0;
   z-index: -1;
   transform: skewY(-10deg);
+}
+.integration::after {
+  content: "";
+  background-color: #f7f9fc;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 .integration .card-container .card {
   width: 50%;
