@@ -3,6 +3,19 @@
 .virtual-events{
     @include abs.flexCenter;
     padding: abs.$spacing-xl*2 0;
+    position: relative;
+    z-index: 10;
+
+    &::before{
+        content: "";
+        background-color: abs.$color-bg-white;
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
 
     .two-column{
         @include abs.flexTwoColumn($items: center);

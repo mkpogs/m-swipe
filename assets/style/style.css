@@ -402,10 +402,21 @@ body {
 }
 
 .global {
-  background-color: #0a2540;
   color: #fff;
-  padding: 19.2rem 0;
+  padding: 19.2rem 0 0;
   position: relative;
+  z-index: 10;
+}
+.global::before {
+  content: "";
+  background-color: #0a2540;
+  width: 100%;
+  height: 1200px;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
 }
 .global a:link,
 .global a:visited {
@@ -422,7 +433,7 @@ body {
   top: 10%;
 }
 .global .card-container {
-  margin: 12.8rem 0;
+  margin: 12.8rem 0 6.4rem;
 }
 .global .card {
   width: 25%;
@@ -437,6 +448,17 @@ body {
 
 .virtual-events {
   padding: 12.8rem 0;
+  position: relative;
+  z-index: 10;
+}
+.virtual-events::before {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 .virtual-events .two-column {
   width: 100%;

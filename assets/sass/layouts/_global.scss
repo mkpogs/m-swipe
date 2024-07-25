@@ -1,12 +1,25 @@
 @use '../abstract/' as abs;
 
 .global{
-    background-color: abs.$color-primary-accent;
     color: abs.$color-text-light;
-    padding: abs.$spacing-xl*3 0;
-
-    position: relative;
+    padding: abs.$spacing-xl*3 0 0;
     @include abs.flexCenter;
+    position: relative;
+    z-index: 10;
+    
+
+    &::before{
+        content: "";
+        background-color: abs.$color-primary-accent;
+        width: 100%;
+        height: 1200px;
+
+        position: absolute;
+        top: -32px;
+        left: 0;
+        z-index: -1;
+        transform: skewY(-10deg);
+    }
 
     a:link,
     a:visited{
@@ -26,7 +39,7 @@
     }
 
     .card-container{
-        margin: abs.$spacing-xl*2 0;
+        margin: abs.$spacing-xl*2 0 abs.$spacing-xl;
     }
 
     .card{
