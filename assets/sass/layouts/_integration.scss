@@ -7,6 +7,7 @@
     position: relative;
     z-index: 10;
 
+
     &::before{
         content: "";
         background-color: abs.$color-primary-accent;
@@ -32,8 +33,37 @@
         z-index: -2;
     }
 
+    .col-left{
+        @include abs.respond(tablet){
+            width: 60%;
+        }
+    }
+
+    .col-right{
+        position: relative;
+        overflow-x: hidden;
+
+        @include abs.respond(tablet){
+            width: 40%;
+        }
+
+        @include abs.respond(mobile){
+            display: none;
+        }
+    }
+
+    .card-container{
+        @include abs.respond(tablet){
+            flex-direction: column;
+        }
+    }
+
     .card-container .card{
-        width: 50%;
+        width: abs.$width-half;
+
+        @include abs.respond(tablet){
+            width: abs.$width-full;
+        }
     }
 
     .btn-primary{
@@ -51,11 +81,15 @@
     }
 
     &__img{
-        max-width: 470px;
+        max-width: 44rem;
         border-radius: 20px;
 
         &:not(:last-child){
             margin: 0 0 abs.$spacing-md;
+        }
+
+        @include abs.respond(mobile){
+            display: none;
         }
     }
 }
