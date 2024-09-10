@@ -2,4 +2,8 @@
 
 .section-container{
     @include abs.containerWidth;
+
+    @include abs.respond(desktop){
+        padding: 0 abs.$spacing-lg;
+    }
 }
