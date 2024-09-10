@@ -3,15 +3,29 @@
 .two-column{
     @include abs.flexTwoColumn($items: flex-start);
 
+    @include abs.respond(mobile){
+        flex-direction: column;
+    }
+
 
     .col-left{
         @include abs.flexHalfWidth;
         padding-right: abs.$spacing-md;
+
+        @include abs.respond(mobile){
+            width: abs.$width-full;
+            padding-right: 0;
+        }
     }
 
     .col-right{
         @include abs.flexHalfWidth;
         padding-left: abs.$spacing-md;
+
+        @include abs.respond(mobile){
+            width: abs.$width-full;
+            padding-left: 0;
+        }
     }
 }     
     

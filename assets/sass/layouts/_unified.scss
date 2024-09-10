@@ -7,8 +7,12 @@
     @include abs.flexCenter;
 
     h3{
-        width: 50%;
+        width: abs.$width-half;
         margin-bottom: abs.$spacing-md;
+
+        @include abs.respond(tablet){
+            width: abs.$width-full;
+        }
     }
 
     .btn-primary{

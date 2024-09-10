@@ -350,6 +350,11 @@ body {
   width: 50%;
   margin-bottom: 1.6rem;
 }
+@media only screen and (max-width: 48em) {
+  .unified h3 {
+    width: 100%;
+  }
+}
 .unified .btn-primary {
   background-color: #6962f1;
   margin: 1.6rem 0;
@@ -642,6 +647,11 @@ body {
   align-items: flex-start;
   gap: 0 2rem;
 }
+@media only screen and (max-width: 34.375em) {
+  .two-column {
+    flex-direction: column;
+  }
+}
 .two-column .col-left {
   width: 50%;
   display: flex;
@@ -650,6 +660,12 @@ body {
   align-items: flex-start;
   padding-right: 1.6rem;
 }
+@media only screen and (max-width: 34.375em) {
+  .two-column .col-left {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .two-column .col-right {
   width: 50%;
   display: flex;
@@ -657,6 +673,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 1.6rem;
+}
+@media only screen and (max-width: 34.375em) {
+  .two-column .col-right {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
