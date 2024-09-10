@@ -143,6 +143,16 @@ html {
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  html {
+    font-size: 54%;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -321,8 +331,14 @@ body {
   gap: 3.2rem 1.6rem;
   margin: 6.4rem 0;
 }
+@media only screen and (max-width: 34.375em) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .partners-grid img {
-  height: 6rem;
+  width: 100%;
+  height: auto;
   place-self: center;
 }
 
@@ -609,7 +625,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .section-container {
-    padding: 0 3.2rem;
+    padding: 0 1.6rem;
   }
 }
 

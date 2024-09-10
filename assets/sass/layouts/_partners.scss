@@ -9,11 +9,21 @@
         grid-template-rows: repeat(2, 1fr);
         gap: abs.$spacing-lg abs.$spacing-md;
         margin: abs.$spacing-xl 0;
+
+        @include abs.respond(mobile){
+            grid-template-columns: repeat(2, 1fr);
+        }
         
 
         img{
-            height: 6rem;
+            width: 100%;
+            height: auto;
             place-self: center;
+
+            // @include abs.respond(desktop){
+            //     width: 100%;
+            //     height: auto;
+            // }
         }
     }
 }

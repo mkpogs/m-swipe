@@ -4,6 +4,6 @@
     @include abs.containerWidth;
 
     @include abs.respond(desktop){
-        padding: 0 abs.$spacing-lg;
+        padding: 0 abs.$spacing-md;
     }
 }

@@ -4,6 +4,14 @@
 
 html{
     font-size: 62.5%;
+
+    @include abs.respond(tablet){
+        font-size: 56.25%;
+    }
+
+    @include abs.respond(mobile){
+        font-size: 54%;
+    }
 }
 
 body{
