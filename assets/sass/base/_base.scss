@@ -1,5 +1,11 @@
 @use '../abstract/' as abs;
 
+html,
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
 body{
     color: abs.$color-text-dark;
     width: 100%;

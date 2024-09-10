@@ -22,6 +22,12 @@
     }
 }
 */
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   color: #000;
   width: 100%;
