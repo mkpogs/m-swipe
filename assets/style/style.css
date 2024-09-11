@@ -226,8 +226,8 @@ body {
 }
 
 .sessions-card {
-  width: 540px;
-  height: 446px;
+  width: 100%;
+  height: 44.6rem;
   box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   overflow: hidden;
@@ -237,6 +237,16 @@ body {
   height: 50%;
   position: relative;
   z-index: 10;
+}
+@media only screen and (max-width: 48em) {
+  .sessions-card .card-top {
+    height: 40%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-top {
+    height: 30%;
+  }
 }
 .sessions-card .card-top::before {
   content: "";
@@ -249,8 +259,18 @@ body {
   z-index: 1;
 }
 .sessions-card .card-top__logo {
-  width: 338px;
+  width: 28.8rem;
   z-index: 2;
+}
+@media only screen and (max-width: 48em) {
+  .sessions-card .card-top__logo {
+    width: 23.8rem;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-top__logo {
+    width: 22.8rem;
+  }
 }
 .sessions-card .card-top .avatar {
   position: absolute;
@@ -258,18 +278,49 @@ body {
   left: 6.4rem;
   z-index: 3;
 }
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-top .avatar {
+    left: 3.2rem;
+    bottom: -60px;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-top .avatar {
+    bottom: -55px;
+  }
+}
 .sessions-card .card-top .avatar__img {
-  width: 80px;
+  width: 8rem;
   position: relative;
 }
 .sessions-card .card-top .avatar__img:nth-child(2) {
   position: absolute;
   left: 65px;
 }
+@media only screen and (max-width: 48em) {
+  .sessions-card .card-top .avatar__img:nth-child(2) {
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-top .avatar__img:nth-child(2) {
+    left: 55px;
+  }
+}
 .sessions-card .card-bottom {
   width: 100%;
   height: 50%;
   padding: 6.4rem;
+}
+@media only screen and (max-width: 48em) {
+  .sessions-card .card-bottom {
+    height: 30%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .sessions-card .card-bottom {
+    height: 20%;
+  }
 }
 .sessions-card .card-bottom .card-content {
   margin: 3.2rem 0 0;
@@ -591,6 +642,7 @@ body {
   padding: 12.8rem 0;
   position: relative;
   z-index: 10;
+  flex-wrap: wrap;
 }
 .virtual-events::before {
   content: "";
@@ -608,6 +660,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0 2rem;
+}
+@media only screen and (max-width: 34.375em) {
+  .virtual-events .two-column {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .virtual-events .col-left {
+    margin-bottom: 6.4rem;
+  }
 }
 .virtual-events .btn-primary {
   background-color: #6962f1;

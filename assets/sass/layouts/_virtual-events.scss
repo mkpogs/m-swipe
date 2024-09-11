@@ -6,6 +6,8 @@
     position: relative;
     z-index: 10;
 
+    flex-wrap: wrap;
+
     &::before{
         content: "";
         background-color: abs.$color-bg-white;
@@ -19,10 +21,25 @@
 
     .two-column{
         @include abs.flexTwoColumn($items: center);
+
+        @include abs.respond(mobile){
+            flex-direction: column;
+        }
     }
         
     .col-left{
-        // padding: 0 abs.$spacing-xl 0 0;
+
+        @include abs.respond(mobile){
+            margin-bottom: abs.$spacing-xl;
+        }
+
+    }
+
+    .col-right{
+
+        // @include abs.respond(mobile){
+        //     padding: 0 abs.$spacing-md 0;
+        // }
     }
 
     .btn-primary{
