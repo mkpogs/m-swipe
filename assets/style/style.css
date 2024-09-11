@@ -552,13 +552,34 @@ body {
   position: absolute;
   top: 10%;
 }
+@media only screen and (max-width: 34.375em) {
+  .global .globe-img {
+    opacity: 10%;
+  }
+}
 .global .card-container {
   margin: 12.8rem 0 6.4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media only screen and (max-width: 48em) {
+  .global .card-container {
+    margin: 6.4rem 0 3.2rem;
+  }
 }
 .global .card {
-  width: 25%;
-  padding: 0 0.8rem 0 0;
-  margin: 0 1.6rem 0 0;
+  width: 20%;
+  padding: 0;
+}
+@media only screen and (max-width: 48em) {
+  .global .card {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .global .card {
+    width: 100%;
+  }
 }
 .global .card__heading {
   border-left: 2px solid #00d4ff;
