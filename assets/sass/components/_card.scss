@@ -7,6 +7,10 @@
     &__img{
         width: 50px;
         margin: 0 0 abs.$spacing-sm 0;
+
+        @include abs.respond(mobile){
+            width: 40px;
+        }
     }
 
     &__heading{

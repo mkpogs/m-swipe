@@ -212,6 +212,11 @@ body {
   width: 50px;
   margin: 0 0 0.8rem 0;
 }
+@media only screen and (max-width: 34.375em) {
+  .card__img {
+    width: 40px;
+  }
+}
 .card__heading {
   font-size: "Anek Telugu", sans-serif;
   font-size: 2.2rem;
@@ -495,11 +500,22 @@ body {
 }
 .why-swipe .card-container {
   margin: 3.2rem 0;
+  gap: 1.6rem 3.2rem;
+  flex-wrap: wrap;
 }
 .why-swipe .card {
-  width: 25%;
-  padding: 0 0.8rem 0 0;
-  margin: 0 1.6rem 0 0;
+  width: 20%;
+  padding: 0;
+}
+@media only screen and (max-width: 48em) {
+  .why-swipe .card {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .why-swipe .card {
+    width: 100%;
+  }
 }
 .why-swipe .secondary-text {
   color: #000;

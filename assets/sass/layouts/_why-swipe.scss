@@ -8,13 +8,24 @@
 
     .card-container{
         margin: abs.$spacing-lg 0;
+        gap: abs.$spacing-md abs.$spacing-lg;
+        flex-wrap: wrap;
     }
 
     .card{
-        width: 25%;
-        padding: 0 abs.$spacing-sm 0 0;
-        margin: 0 abs.$spacing-md 0 0;
+        width: 20%;
+        padding: 0;
+
+        @include abs.respond(tablet){
+            width: 45%;
+        }
+
+        @include abs.respond(mobile){
+            width: abs.$width-full;
+        }
     }
+
+    
 
     .secondary-text{
         color: abs.$color-text-dark;
