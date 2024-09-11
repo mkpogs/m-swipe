@@ -726,6 +726,13 @@ body {
 }
 .footer .section-container {
   display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 34.375em) {
+  .footer .section-container {
+    gap: 6rem 1rem;
+    justify-content: space-around;
+  }
 }
 .footer-logo {
   max-width: 108px;
@@ -748,6 +755,11 @@ body {
 .footer .col {
   width: 25%;
 }
+@media only screen and (max-width: 34.375em) {
+  .footer .col {
+    width: 45%;
+  }
+}
 .footer .col h3 {
   font-size: 2.2rem;
   font-weight: 700;
@@ -758,6 +770,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem 0;
+  text-wrap: wrap;
 }
 .footer .col a:link,
 .footer .col a:visited {
