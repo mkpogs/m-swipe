@@ -4,6 +4,12 @@
     padding: abs.$spacing-xl;
     @include abs.flexCenter;
 
+    .col-left{
+        @include abs.respond(mobile){
+            margin-bottom: abs.$spacing-lg;
+        }
+    }
+
     .btn-primary{
         background-color: abs.$color-purple-1;
         margin: abs.$spacing-md 0;
@@ -21,11 +27,19 @@
     .card-container{
         margin: 0;
         gap: 0 abs.$spacing-sm;
+        
+        @include abs.respond(tablet){
+            flex-direction: column;
+        }
     }
 
     .card{
-        width: 50%;
+        width: abs.$width-half;
 
         @include abs.flexColPos(flex-start, flex-start);
+
+        @include abs.respond(tablet){
+            width: abs.$width-full;
+        }
     }
 }
